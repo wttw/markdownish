@@ -1,0 +1,35 @@
+{{define "text"}}{{.Content}}{{end}}
+{{define "cr"}}
+{{end}}
+{{define "br"}}<br>
+{{end}}
+{{define "nbsp"}}&nbsp;{{end}}
+{{define "em"}}<em>{{.Content}}</em>{{end}}
+{{define "strong"}}<strong>{{.Content}}</strong>{{end}}
+{{define "del"}}<del>{{.Content}}</del>{{end}}
+{{define "blockquote"}}<blockquote{{.Attrs}}>{{.Content}}</blockquote>
+{{end}}
+{{define "aside"}}<aside{{.Attrs}}>{{.Content}}</aside>
+{{end}}
+{{define "p"}}<p{{.Attrs}}>{{.Content}}</p>
+{{end}}
+{{define "hr"}}<hr>
+{{end}}
+{{define "th"}}<th>{{.Content}}</th>
+{{end}}
+{{define "tr"}}<tr>{{.Content}}</tr>
+{{end}}
+{{define "sub"}}<sub>{{.Content}}</sub>{{end}}
+{{define "sup"}}<sup>{{.Content}}</sup>{{end}}
+{{define "h1"}}<h1{{.Attrs}}>{{.Content}}</h1>
+{{end}}
+{{define "h2"}}<h2{{.Attrs}}>{{.Content}}</h2>
+{{end}}
+{{define "h3"}}<h3{{.Attrs}}>{{.Content}}</h3>
+{{end}}
+{{define "h4"}}<h4{{.Attrs}}>{{.Content}}</h4>
+{{end}}
+{{define "h5"}}<h5{{.Attrs}}>{{.Content}}</h5>
+{{end}}
+{{define "h6"}}<h6{{.Attrs}}>{{.Content}}</h6>
+{{end}}
