@@ -7,10 +7,19 @@ render to a subset of HTML that can be used in table-style layouts for HTML emai
 All the documentation for [gomarkdown](https://github.com/gomarkdown/markdown) applies, and if run without
 a template file it will behave similarly.
 
+### Installation
+
+Go to the [releases page](https://github.com/wttw/markdownish/releases/latest) and download the appropriate
+zip file for your platform. Unzip it to get `mdtohtml` (or `mdtohtml.zip` if you're that way inclined).
+
+### Usage
+
 `mdtohtml -help` will display the supported flags.
 
 `mdtohtml -template <templatefile> <input.md> <output.html>` will render input.md to output.html using the
 configuration in the template file.
+
+### Templates
 
 A template file is a [go template](https://golang.org/pkg/text/template/) syntax file that defines one or more
 blocks. Each block has a name, and when rendering markdown that would normally be rendered as, for example, a
@@ -60,3 +69,7 @@ A template file might look something like this:
 Each block starts with `{{define "name"}}` and ends with `{{end}}`. Inside the block text will be rendered as-is,
 but `{{.Attrs}}` will be replaced with the HTML attributes for a tag, and {{.Content}} will be replaced with the
 (appropriately HTML escaped, probably) content.
+
+### Support
+
+[Issue tracker](https://github.com/wttw/markdownish/issues). Patches welcome.
